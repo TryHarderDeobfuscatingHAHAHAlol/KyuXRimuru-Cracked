@@ -1293,11 +1293,11 @@ toos:AddSwitch("Auto Equiped Dumbbell Curl 75kg", function(state)
     end
 end)
 
-local farmingCurl40 = false
+local farmingCurl200 = false
 toos:AddSwitch("Auto Equiped Dumbbell Curl 200kg", function(state)
-    farmingCurl40 = state
-    while farmingCurl40 do
-        remotes.dumbbellTake:FireServer("Dumbbell Curl Legend")
+    farmingCurl200 = state
+    while farmingCurl200 do
+        remotes.dumbbellTake:FireServer("200KG Dumbbell Curl)
         task.wait(6)
     end
 end)
@@ -1359,11 +1359,11 @@ toos:AddSwitch("Auto Equiped Dead Lift 75kg", function(state)
     end
 end)
 
-local farmingDeadLift40 = false
+local farmingDeadLift200 = false
 toos:AddSwitch("Auto Equiped Dead Lift 200kg", function(state)
-    farmingDeadLift40 = state
-    while farmingDeadLift40 do
-        remotes.dumbbellTake:FireServer("Dead Lift Legend")
+    farmingDeadLift200 = state
+    while farmingDeadLift200 do
+        remotes.dumbbellTake:FireServer("200KG Deadlift")
         task.wait(6)
     end
 end)
@@ -1425,11 +1425,11 @@ toos:AddSwitch("Auto Equiped Squat 75kg", function(state)
     end
 end)
 
-local farmingSquat40 = false
+local farmingSquat200 = false
 toos:AddSwitch("Auto Equiped Squat 200kg", function(state)
-    farmingSquat40 = state
-    while farmingSquat40 do
-        remotes.dumbbellTake:FireServer("Squat Legend")
+    farmingSquat200 = state
+    while farmingSquat200 do
+        remotes.dumbbellTake:FireServer("200KG Squat")
         task.wait(6)
     end
 end)
