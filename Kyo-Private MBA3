@@ -1052,6 +1052,14 @@ opfarms:AddButton("Equiped Dumbbell Curl 75kg", function()
     game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
 end)
 
+-- Button 2: Use Dumbbell Curl
+opfarms:AddButton("Equiped Dumbbell Curl 200kg", function()
+    local args = {
+        [1] = "Dumbbell Curl Legend"
+    }
+    game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
+end)
+
 opfarms:AddLabel("Dead lift")
 
 -- Button 3: Use Dead Lift
@@ -1102,6 +1110,15 @@ opfarms:AddButton("Equiped Dead Lift 75kg", function()
     game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
 end)
 
+-- Button 3: Use Dead Lift
+opfarms:AddButton("Equiped Dead Lift 200kg", function()
+    local args = {
+        [1] = "Dead Lift Legend"
+    }
+    game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
+end)
+
+
 opfarms:AddLabel("Squat")
 
 -- Button 1: Use Squat
@@ -1146,6 +1163,14 @@ end)
 
 -- Button 1: Use Squat
 opfarms:AddButton("Equiped Squat 75kg", function()
+    local args = {
+        [1] = "Squat Legend"
+    }
+    game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
+end)
+
+-- Button 1: Use Squat
+opfarms:AddButton("Equiped Squat 200kg", function()
     local args = {
         [1] = "Squat Legend"
     }
@@ -1268,6 +1293,15 @@ toos:AddSwitch("Auto Equiped Dumbbell Curl 75kg", function(state)
     end
 end)
 
+local farmingCurl40 = false
+toos:AddSwitch("Auto Equiped Dumbbell Curl 200kg", function(state)
+    farmingCurl40 = state
+    while farmingCurl40 do
+        remotes.dumbbellTake:FireServer("Dumbbell Curl Legend")
+        task.wait(6)
+    end
+end)
+
 -- Dead lift Toggles
 toos:AddLabel("Dead lift")
 
@@ -1325,6 +1359,15 @@ toos:AddSwitch("Auto Equiped Dead Lift 75kg", function(state)
     end
 end)
 
+local farmingDeadLift40 = false
+toos:AddSwitch("Auto Equiped Dead Lift 200kg", function(state)
+    farmingDeadLift40 = state
+    while farmingDeadLift40 do
+        remotes.dumbbellTake:FireServer("Dead Lift Legend")
+        task.wait(6)
+    end
+end)
+
 -- Squat Toggles
 toos:AddLabel("Squat")
 
@@ -1375,6 +1418,15 @@ end)
 
 local farmingSquat40 = false
 toos:AddSwitch("Auto Equiped Squat 75kg", function(state)
+    farmingSquat40 = state
+    while farmingSquat40 do
+        remotes.dumbbellTake:FireServer("Squat Legend")
+        task.wait(6)
+    end
+end)
+
+local farmingSquat40 = false
+toos:AddSwitch("Auto Equiped Squat 200kg", function(state)
     farmingSquat40 = state
     while farmingSquat40 do
         remotes.dumbbellTake:FireServer("Squat Legend")
@@ -1495,7 +1547,7 @@ createAutoSell("Astrax")
 
 -- Titan Egg Section
 autosell:AddLabel("Titan Egg")
-createAutoSell("Roge Shark")
+createAutoSell("Rage Shark")
 createAutoSell("Titan Crocodile")
 createAutoSell("Battle Gorilla")
 createAutoSell("Champion Dragon")
