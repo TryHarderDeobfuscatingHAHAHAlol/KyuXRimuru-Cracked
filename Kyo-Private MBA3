@@ -5,7 +5,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 -- Dynamically generate the window title with a welcome message
-local windowTitle = "PrimeKenzouu | PUBLIC VERSION | Sapakan Na! " .. LocalPlayer.DisplayName
+local windowTitle = "PrimeKenzouu | Public Version | Sapakan Na! " .. LocalPlayer.DisplayName
 
 local window = library:AddWindow(windowTitle, {
     main_color = Color3.fromRGB(41, 74, 122),
@@ -95,9 +95,11 @@ end)
 local features = window:AddTab("Credits") -- Name of tab
 features:Show() -- shows the tab
 
-features:AddLabel("KyoXRimuru Private")
-features:AddLabel("Made By: Kyo")
-features:AddLabel("~~~~~~~~~~~~~~~~~~")
+features:AddLabel("Made By Kenzou")
+features:AddLabel("Thank You For Using My Public Script")
+features:AddLabel("Prime Kenzou On Top")
+features:AddLabel("These Players Are Prohibited to Use My Public Script 👇")
+features:AddLabel("Maitre_eyuns, Maitre 22222, Mhar, QUERUB3N, NSP_Jekk, Yuki, TAKEME356")
 
 -- Create Tab within the Window
 local FarmTab = window:AddTab("Farm")
@@ -3810,7 +3812,7 @@ fps1:AddButton('Remove Fog', function()
 	end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Private~Script",
-    Text = "Made By: Kyo",
+    Title = "Public Script Executed!",
+    Text = "Sucessfully Executed Public Script",
     Duration = 5,
 })
