@@ -1653,7 +1653,7 @@ end)
 
 TeleportTab:AddButton("Titan Gym Island", function()
     teleportTo(CFrame.new(
-        -8958.5, 5.6, 6128.8, 1, 0, 0, 0, 1, 0, 0, 0, 1
+        -8958.5, 5.6, 6128.8
     ))
 end)
 
