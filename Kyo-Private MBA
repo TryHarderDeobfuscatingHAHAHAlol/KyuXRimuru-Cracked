@@ -1657,6 +1657,12 @@ TeleportTab:AddButton("Titan Gym Island", function()
     ))
 end)
 
+TeleportTab:AddButton("Arena Boost 1000 %", function()
+    teleportTo(CFrame.new(
+        -910.248352, 10.8888636, 581.611511, -0.101835206, 0, 0.994801283, 0, 1, 0, -0.994801283, 0, -0.101835206
+    ))
+end)
+
 ---------------------------------------------------------
 -- [SECTION 1: LOCAL PLAYER STATS TAB]
 ---------------------------------------------------------
