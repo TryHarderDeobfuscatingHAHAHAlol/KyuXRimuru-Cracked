@@ -1043,14 +1043,6 @@ opfarms:AddButton("Equiped Dumbbell Curl 75kg", function()
     game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
 end)
 
--- Button 2: Use Dumbbell Curl
-opfarms:AddButton("Equiped Dumbbell Curl 200kg", function()
-    local args = {
-        [1] = "Dumbbell Curl Legend"
-    }
-    game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
-end)
-
 opfarms:AddLabel("Dead lift")
 
 -- Button 3: Use Dead Lift
@@ -1101,15 +1093,6 @@ opfarms:AddButton("Equiped Dead Lift 75kg", function()
     game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
 end)
 
--- Button 3: Use Dead Lift
-opfarms:AddButton("Equiped Dead Lift 200kg", function()
-    local args = {
-        [1] = "Dead Lift Legend"
-    }
-    game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
-end)
-
-
 opfarms:AddLabel("Squat")
 
 -- Button 1: Use Squat
@@ -1159,16 +1142,6 @@ opfarms:AddButton("Equiped Squat 75kg", function()
     }
     game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
 end)
-
--- Button 1: Use Squat
-opfarms:AddButton("Equiped Squat 200kg", function()
-    local args = {
-        [1] = "Squat Legend"
-    }
-    game:GetService("ReplicatedStorage").remotes.dumbbellTake:FireServer(unpack(args))
-end)
-
-local remotes = game:GetService("ReplicatedStorage").remotes
 
 -- Push ups Toggles
 toos:AddLabel("Push ups")
@@ -1284,15 +1257,6 @@ toos:AddSwitch("Auto Equiped Dumbbell Curl 75kg", function(state)
     end
 end)
 
-local farmingCurl200 = false
-toos:AddSwitch("Auto Equiped Dumbbell Curl 200kg", function(state)
-    farmingCurl200 = state
-    while farmingCurl200 do
-        remotes.dumbbellTake:FireServer("200KG Dumbbell Curl)
-        task.wait(6)
-    end
-end)
-
 -- Dead lift Toggles
 toos:AddLabel("Dead lift")
 
@@ -1350,16 +1314,6 @@ toos:AddSwitch("Auto Equiped Dead Lift 75kg", function(state)
     end
 end)
 
-local farmingDeadLift200 = false
-toos:AddSwitch("Auto Equiped Dead Lift 200kg", function(state)
-    farmingDeadLift200 = state
-    while farmingDeadLift200 do
-        remotes.dumbbellTake:FireServer("200KG Deadlift")
-        task.wait(6)
-    end
-end)
-
--- Squat Toggles
 toos:AddLabel("Squat")
 
 local farmingSquat5 = false
@@ -1412,15 +1366,6 @@ toos:AddSwitch("Auto Equiped Squat 75kg", function(state)
     farmingSquat40 = state
     while farmingSquat40 do
         remotes.dumbbellTake:FireServer("Squat Legend")
-        task.wait(6)
-    end
-end)
-
-local farmingSquat200 = false
-toos:AddSwitch("Auto Equiped Squat 200kg", function(state)
-    farmingSquat200 = state
-    while farmingSquat200 do
-        remotes.dumbbellTake:FireServer("200KG Squat")
         task.wait(6)
     end
 end)
@@ -3939,7 +3884,7 @@ fps1:AddButton('Remove Fog', function()
 		})
 	end)
 
-local features = window:AddTab("Info) -- Name of tab
+local features = window:AddTab("Credits) -- Name of tab
 features:Show() -- shows the tab
 
 features:AddLabel("Made By PrimeKenzou")
