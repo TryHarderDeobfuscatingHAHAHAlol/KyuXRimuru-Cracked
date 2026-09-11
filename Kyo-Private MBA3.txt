@@ -65,7 +65,7 @@ local function isBlacklisted()
 end
 
 if isBlacklisted() then
-    LocalPlayer:Kick("HOY GAGO KA BLACKLISTED KA SA PUB SCRIPT KO BOBO KA!")
+    LocalPlayer:Kick("BLACKLISTED KA SA PUBLIC SCRIPT KO TANGINAMO!")
     return
 end
 
@@ -177,20 +177,11 @@ task.spawn(function()
     end)
 end)
 
-local features = window:AddTab("Credits") -- Name of tab
-features:Show() -- shows the tab
-
-features:AddLabel("Made By Kenzou")
-features:AddLabel("Thank You For Using My Public Script")
-features:AddLabel("Prime Kenzou On Top")
-features:AddLabel("These Players Are Prohibited to Use My Public Script 👇")
-features:AddLabel("Maitre_eyuns, Maitre 22222, Mhar, QUERUB3N, NSP_Jekk, Yuki, TAKEME356")
-
 -- Create Tab within the Window
-local FarmTab = window:AddTab("Farm")
+local FarmTab = window:AddTab("Farming")
 
-local opfarms = FarmTab:AddFolder("Equiped Dumbbells")
-local toos = FarmTab:AddFolder("Auto Equiped Dumbbells V2")
+local opfarms = FarmTab:AddFolder("Auto Equip Dumbbells V1")
+local toos = FarmTab:AddFolder("Auto Equip Dumbbells V2")
 
 local Players = game:GetService("Players")
 local VirtualUser = game:GetService("VirtualUser")
@@ -246,7 +237,7 @@ TextLabel.TextYAlignment = Enum.TextYAlignment.Center
 TextLabel.Parent = MainFrame
 
 -- 3. Add to your Elerium Tab
-local AntiAFKSwitch = FarmTab:AddSwitch("Anti-AFK ☕", function(bool)
+local AntiAFKSwitch = FarmTab:AddSwitch("Anti-AFK", function(bool)
     if bool then
         -- Make the ScreenGui container visible
         MainFrame.Visible = true
@@ -1383,7 +1374,7 @@ toos:AddSwitch("Auto Equiped Squat 75kg", function(state)
 end)
 
 -- Create Tab within the Window
-local eggtab = window:AddTab("Auto Egg")
+local eggtab = window:AddTab("Auto Hatch Egg")
 
 -- Global Environment Setup
 getgenv().AutoBuyPet = false
@@ -1916,7 +1907,7 @@ _G.LocalTracker.Utils.bindObjectSignals = function(name, obj)
 end
 
 _G.LocalTracker.TrackerTab = nil
-pcall(function() _G.LocalTracker.TrackerTab = window:AddTab("Stats 📊") end)
+pcall(function() _G.LocalTracker.TrackerTab = window:AddTab("Stats") end)
 
 _G.LocalTracker.ClockLabel = _G.LocalTracker.TrackerTab and _G.LocalTracker.TrackerTab:AddLabel("Session Time: 00:00:00") or nil
 
@@ -2058,7 +2049,7 @@ do
     -- [SECTION 3: SPY PLAYER INTERFACE FIELDS]
     ---------------------------------------------------------
     _G.TrackerCore.SpyTab = nil
-    pcall(function() _G.TrackerCore.SpyTab = window:AddTab("Spy Stats Player 👁️") end)
+    pcall(function() _G.TrackerCore.SpyTab = window:AddTab("Spy Stats") end)
 
     -- [[ SINGLE TARGET DROPDOWN ]]
     local singleTargetDropdown = _G.TrackerCore.SpyTab and _G.TrackerCore.SpyTab:AddDropdown("Select Player...", function(text)
@@ -3895,6 +3886,16 @@ fps1:AddButton('Remove Fog', function()
 			Duration = 5,
 		})
 	end)
+
+local features = window:AddTab("Info") -- Name of tab
+features:Show() -- shows the tab
+
+features:AddLabel("Made By Kenzou")
+features:AddLabel("Thank You For Using My Public Script")
+features:AddLabel("Prime Kenzou On Top")
+features:AddLabel("BLACKLISTED PLAYERS 👇")
+features:AddLabel("Maitre_eyuns, Maitre 22222, Mhar, QUERUB3N, NSP_Jekk, Yuki, TAKEME356")
+
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Public Script Executed!",
