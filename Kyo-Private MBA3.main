@@ -2304,7 +2304,7 @@ local function isWhitelisted(otherPlayer)
 end
 
 -- Create tab after vars are ready
-local Tab = window:AddTab("☠️ Auto Kill") -- Name of tab
+local Tab = window:AddTab("Auto Kill") -- Name of tab
 
 Tab:AddButton("Server Hop + Auto Kill", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IVRzHxZ/Farming-Auto-KIll-in-xKyo/refs/heads/main/farmkillsxkyo"))()
@@ -3268,9 +3268,9 @@ task.spawn(function()
     end)
 end)
 
-local Tab = window:AddTab("⚙️ Misc") -- Name of tab
+local Tab = window:AddTab("Misc") -- Name of tab
 
-local misc = Tab:AddFolder("Misc")
+local misc = Tab:AddFolder("Misc 1")
 
 misc:AddButton("Stats Changer", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/Lrjy9D3B"))()
@@ -3511,7 +3511,7 @@ task.spawn(function()
     end
 end)
 
-local mainTab = Tab:AddFolder("Misc V2")
+local mainTab = Tab:AddFolder("Misc 2")
 
 local function mk(n, c)
     local g = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer.PlayerGui)
@@ -3589,7 +3589,7 @@ mainTab:AddSwitch("Box ESP", function(s) be = s for _, d in pairs(c) do if d.H t
 mainTab:AddSwitch("Player Name ESP", function(s) ne = s for _, d in pairs(c) do if d.N then d.N.Enabled = s end end end)
 mainTab:AddSwitch("Health Bar ESP", function(s) he = s for _, d in pairs(c) do if d.B then d.B.Enabled = s end end end)
 	
-local fps1 = Tab:AddFolder("Misc V3")
+local fps1 = Tab:AddFolder("Misc 3")
 
 	fps1:AddButton('Remove Textures', function()
 		local v1194, v1195, v1196 = pairs(game:GetDescendants())
@@ -3890,12 +3890,15 @@ fps1:AddButton('Remove Fog', function()
 local features = window:AddTab("Info") -- Name of tab
 features:Show() -- shows the tab
 
-features:AddLabel("Made By Kenzou")
+features:AddLabel("Made By PrimeKenzou")
 features:AddLabel("Thank You For Using My Public Script")
-features:AddLabel("Prime Kenzou On Top")
 features:AddLabel("BLACKLISTED PLAYERS 👇")
 features:AddLabel("Maitre_eyuns, Maitre 22222, Mhar, QUERUB3N, NSP_Jekk, Yuki, TAKEME356")
 
+features:AddLabel("")
+local wLabel = features:AddLabel("KENZOU PUBLIC VERSION")
+wLabel.TextSize = 40
+wLabel.Font = Enum.Font.Arcade
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Public Script Executed!",
