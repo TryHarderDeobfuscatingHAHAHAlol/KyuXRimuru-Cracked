@@ -1645,7 +1645,7 @@ MainTab:AddSwitch("Auto Upgrade Chest", function(bool)
 end)
 
 -- Create Only the Teleports Tab within the Window
-local TeleportTab = window:AddTab("World")
+local TeleportTab = window:AddTab("Teleport")
 
 -- Teleport Helper Function
 local function teleportTo(cframe)
@@ -1663,6 +1663,12 @@ end
 TeleportTab:AddButton("Spawn", function()
     teleportTo(CFrame.new(
         -15.0386581, 9.44794369, 99.5055084, 1, 0, 0, 0, 1, 0, 0, 0, 1
+    ))
+end)
+
+TeleportTab:AddButton("Safe Zone 0-1M", function()
+    teleportTo(CFrame.new(
+        -259.966248, 9.57174969, 16.8054733, -0.0436196253, -2.76712946e-08, -0.999048233, 9.58031023e-08, 1, -3.1880532e-08, 0.999048233, -9.71025358e-08, -0.0436196253
     ))
 end)
 
@@ -1708,15 +1714,9 @@ TeleportTab:AddButton("Dumbbells World", function()
     ))
 end)
 
-TeleportTab:AddButton("Safe Zone 0-1M", function()
+TeleportTab:AddButton("Titan Gym Island", function()
     teleportTo(CFrame.new(
-        -259.966248, 9.57174969, 16.8054733, -0.0436196253, -2.76712946e-08, -0.999048233, 9.58031023e-08, 1, -3.1880532e-08, 0.999048233, -9.71025358e-08, -0.0436196253
-    ))
-end)
-
-TeleportTab:AddButton("Arena Boost", function()
-    teleportTo(CFrame.new(
-        -25.8208008, 10.4261885, 348.60202, 0.0174522307, -5.16945846e-08, 0.99984771, -2.01935868e-09, 1, 5.17377039e-08, -0.99984771, -2.92198954e-09, 0.0174522307
+        4994.79932, 10.5763903, 440.314362, -3.57627897e-07, -2.96512859e-08, -1, 6.53894432e-08, 1, -2.9651309e-08, 1, -6.53894574e-08, -3.57627897e-07
     ))
 end)
 
@@ -1729,9 +1729,75 @@ TeleportTab:AddButton("Boss Boost", function()
     ))
 end)
 
-TeleportTab:AddButton("Titan Gym Island", function()
+TeleportTab:AddButton("Arena Boost 18%", function()
     teleportTo(CFrame.new(
-        4994.79932, 10.5763903, 440.314362, -3.57627897e-07, -2.96512859e-08, -1, 6.53894432e-08, 1, -2.9651309e-08, 1, -6.53894574e-08, -3.57627897e-07
+        -25.8208008, 10.4261885, 348.60202, 0.0174522307, -5.16945846e-08, 0.99984771, -2.01935868e-09, 1, 5.17377039e-08, -0.99984771, -2.92198954e-09, 0.0174522307
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 25%", function()
+    teleportTo(CFrame.new(
+        1878.20776, 10.6999903, 80.2840347, -0.186482161, 5.7147318e-08, 0.982458353, 6.40675495e-08, 1, -4.60068996e-08, -0.982458353, 5.43642358e-08, -0.186482161
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 35%", function()
+    teleportTo(CFrame.new(
+        3826.70874, 5.26375294, 396.468079, 0.16196236, -1.41390615e-08, -0.986796916, -5.28429958e-08, 1, -2.30013253e-08, 0.986796916, 5.58706539e-08, 0.16196236
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 50%", function()
+    teleportTo(CFrame.new(
+        -286.8013, 8.11831379, 2653.2207, -0.0839834884, -7.69802426e-08, 0.996467173, 9.08480402e-09, 1, 7.801885e-08, -0.996467173, 1.56050035e-08, -0.0839834884
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 100%", function()
+    teleportTo(CFrame.new(
+        -133.176849, 12.1300173, 4389.7373, -0.991407275, 3.56622243e-09, -0.130811229, 3.00160763e-09, 1, 4.51342563e-09, 0.130811229, 4.08199918e-09, -0.991407275
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 150%", function()
+    teleportTo(CFrame.new(
+        -1813.86853, 10.9312506, 330.79776, -0.122324601, -3.13583794e-12, 0.992490172, 1.07769482e-08, 1, 1.33142053e-09, -0.992490172, 1.08588809e-08, -0.122324601
+    ))
+end)
+
+TeleportTab:AddButton("VIP Boost 185% REQUIRES VIP", function()
+    teleportTo(CFrame.new(
+        -271.105164, 8.02610493, 348.933441, -0.00368146622, 0, 0.999993205, 0, 1, 0, -0.999993205, 0, -0.00368146622
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 170%", function()
+    teleportTo(CFrame.new(
+        -199.092438, 10.9310827, 579.725098, -0.125456229, -1.90094318e-09, 0.992099166, -2.68448606e-08, 1, -1.47859391e-09, -0.992099166, -2.68182632e-08, -0.125456229
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 180%", function()
+    teleportTo(CFrame.new(
+        -333.675476, 10.9310884, 579.473816, -0.100714162, 0, 0.994915426, 0, 1, 0, -0.994915426, 0, -0.100714162
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 200%", function()
+    teleportTo(CFrame.new(
+        5265.54004, 10.9312038, 398.775513, 0.129527479, 1.35402258e-08, -0.991575837, 1.37851472e-08, 1, 1.54559849e-08, 0.991575837, -1.56709934e-08, 0.129527479
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 250%", function()
+    teleportTo(CFrame.new(
+        -466.660797, 10.9310513, 579.656128, -0.0815361142, 0, 0.996670365, 0, 1, 0, -0.996670365, 0, -0.0815361142
+    ))
+end)
+
+TeleportTab:AddButton("Arena Boost 500%", function()
+    teleportTo(CFrame.new(
+        -657.036804, 10.9310274, 580.776672, -0.0987548307, 2.27731167e-09, 0.995111823, -1.31174605e-09, 1, -2.4186757e-09, -0.995111823, -1.54418989e-09, -0.0987548307
     ))
 end)
 
