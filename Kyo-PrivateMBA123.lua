@@ -1486,7 +1486,7 @@ createAutoSell("Astrax")
 
 -- Titan Egg Section
 autosell:AddLabel("Titan Egg")
-createAutoSell("Roge Shark")
+createAutoSell("Rage Shark")
 createAutoSell("Titan Crocodile")
 createAutoSell("Battle Gorilla")
 createAutoSell("Champion Dragon")
@@ -3956,7 +3956,7 @@ fps1:AddButton('Remove Fog', function()
 local features = window:AddTab("Info") -- Name of tab
 features:Show() -- shows the tab
 
-features:AddLabel("Made By PrimeKenzou")
+features:AddLabel("Made By PrimeKenzou with ❤️")
 features:AddLabel("Thank You For Using My Public Script")
 features:AddLabel("BLACKLISTED PLAYERS 👇")
 features:AddLabel("Maitre_eyuns, Maitre 22222, Mhar, QUERUB3N, NSP_Jekk, Yuki, TAKEME356")
