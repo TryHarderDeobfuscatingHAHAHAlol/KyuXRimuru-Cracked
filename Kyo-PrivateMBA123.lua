@@ -83,7 +83,7 @@ task.spawn(function()
     end
 end)
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/TryHarderDeobfuscatingHAHAHAlol/KyuXRimuru-Cracked/refs/heads/main/Kyo-UI-LibraryxPrivate.txt", true))()
+local library = loadstring(game:HttpGet("https://slh-hub.lovable.app/raw/kyomba2-ui-lib", true))()
 
 -- Make sure the Players service is available
 local Players = game:GetService("Players")
