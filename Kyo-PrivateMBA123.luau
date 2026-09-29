@@ -90,7 +90,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 -- Dynamically generate the window title with a welcome message
-local windowTitle = "PrimeKenzouu | Public Version | Sapakan Na! " .. LocalPlayer.DisplayName
+local windowTitle = "M14EBR || Public Script || By PrimeKenzouu | Have A Good Day! " .. LocalPlayer.DisplayName
 
 local window = library:AddWindow(windowTitle, {
     main_color = Color3.fromRGB(41, 74, 122),
@@ -1374,11 +1374,11 @@ toos:AddSwitch("Auto Equiped Squat 75kg", function(state)
 end)
 
 -- Create Tab within the Window
-local eggtab = window:AddTab("Auto Hatch Egg")
+local eggtab = window:AddTab("Pet Shop")
 
 -- Global Environment Setup
 getgenv().AutoBuyPet = false
-getgenv().SelectedPetRarity = "common" -- Default selected rarity
+getgenv().SelectedPetRarity = "Common" -- Default selected rarity
 
 -- Services
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -1403,13 +1403,13 @@ local petDropdown = eggtab:AddDropdown("Select Egg", function(selected)
 end)
 
 -- 2. Add each option manually using the official Elerium syntax
-petDropdown:Add("common")
-petDropdown:Add("uncommon")
-petDropdown:Add("rare")
-petDropdown:Add("epic")
-petDropdown:Add("mythic")
-petDropdown:Add("master")
-petDropdown:Add("titan")
+petDropdown:Add("Common")
+petDropdown:Add("Uncommon")
+petDropdown:Add("Rare")
+petDropdown:Add("Epic")
+petDropdown:Add("Mythic")
+petDropdown:Add("Master")
+petDropdown:Add("Titan")
 
 -- Switch to toggle the actual auto-buyer loop
 eggtab:AddSwitch("Auto Buy Selected Egg", function(bool)
@@ -2370,7 +2370,7 @@ local function isWhitelisted(otherPlayer)
 end
 
 -- Create tab after vars are ready
-local Tab = window:AddTab("Auto Kill") -- Name of tab
+local Tab = window:AddTab("Killing") -- Name of tab
 
 Tab:AddButton("Server Hop + Auto Kill", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IVRzHxZ/Farming-Auto-KIll-in-xKyo/refs/heads/main/farmkillsxkyo"))()
@@ -3964,7 +3964,7 @@ features:AddLabel("Maitre_eyuns, Maitre 22222, Mhar, QUERUB3N, NSP_Jekk, Yuki, T
 features:AddLabel("")
 local wLabel = features:AddLabel("KENZOU PUBLIC VERSION")
 wLabel.TextSize = 40
-wLabel.Font = Enum.Font.Arcade
+wLabel.Font = Enum.Font.Bodoni
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Public Script Executed!",
